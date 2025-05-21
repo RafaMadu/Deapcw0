@@ -2,23 +2,84 @@
 <html lang = "pt">
 
 <head>
+	<link rel="stylesheet" href="bilhetes.css">
 	<title>Bilheteria Jardim Zoológico do Porto</title>
 </head>
 
 <body>
 	<h1>Quem nós somos e Bilheteira</h1>
 	<P>
-	<h2>Bem-vindo ao Jardim Zoológico do Porto</h2>
+	<h3>Bem-vindo ao Jardim Zoológico do Porto</h3>
 	<p>
 	No coração da natureza, desde <b>1975</b>, o Jardim Zoológico do Porto tem sido um refúgio de conservação, educação e encanto para todas as idades. Fundado com o propósito de proteger espécies ameaçadas e proporcionar um contacto único entre humanos e animais, o nosso zoo tornou-se um símbolo de harmonia entre a vida selvagem e o mundo moderno.
 	<p>
-	<h2>Um espaço Natural Único</h2>
+	<h3>Um espaço Natural Único</h3>
 	<p>
 	Localizado num <b>terreno de 50 hectares</b>, o nosso parque foi cuidadosamente planeado para recriar os habitats naturais dos animais. Com florestas exuberantes, lagos cristalinos e vastas planícies, cada cantinho foi pensado para garantir o bem-estar das nossas espécies e proporcionar uma experiência imersiva aos visitantes.
 	<p>
-	<b>Conheça ALguns dos Nossos Animais</b>
+	<h3>Conheça Alguns dos Nossos Animais</h3>
 	<p>
+	<ul>
+    		<li><b>Leões Africanos</b> – Os reis da savana, majestosos e poderosos.</li>
+    		<li><b>Girafas</b> – Com o seu porte elegante, são das favoritas das crianças.</li>
+		<li><b>Tigres-de-Bengala</b> – Raros e impressionantes, símbolos da nossa missão de conservação.</li>
+		<li><b>Pandas-Vermelhos</b> – Adoráveis e brincalhões, uma espécie em risco que protegemos com carinho.</li>
+		<li><b>Araras Azuis</b> – Coloridas e cheias de vida, voando livremente no nosso aviário tropical.</li>
+	</ul>
 	
+	<p>
+	<h3>Mais do que um Zoo, um Legado</h3>
+	<p>
+	Além de oferecer momentos inesquecíveis, o Jardim Zoológico do Porto dedica-se à <b>investigação científica, programas de reprodução e educação ambiental</b>, garantindo um futuro melhor para a biodiversidade.
+	<p>
+	<b>Visite-nos e embarque numa aventura selvagem!</b>
+	
+	<h2>Preços dos Bilhetes</h2>
+    	<table>
+		<tr>
+		    <th>Tipo de Bilhete</th>
+		    <th>Preço Normal</th>
+		    <th>Quantidade de Bilhetes</th>
+		</tr>
+		<tr>
+		    <td>Criança (3-12 anos)</td>
+		    <td>18.50€</td>
+		    <td>
+		    <input type="number" name="qtd_crianca" min="0" max="10" value="0">
+		    </td>
+		</tr>
+		<tr>
+		    <td>Adulto (13-64 anos)</td>
+		    <td>30.50€</td>
+		    <td>
+		    <input type="number" name="qtd_adulto" min="0" max="10" value="0">
+		    </td>
+		</tr>
+		<tr>
+		    <td>Sénior (+65 anos)</td>
+		    <td>21.50€</td>
+		    <td>
+		    <input type="number" name="qtd_senior" min="0" max="10" value="0">
+		    </td>
+		</tr>
+		<tr>
+		    <td>Pack Família (2 adultos + 2 crianças)</td>
+		    <td>85.00€</td>
+		    <td>
+		    <input type="number" name="qtd_familia" min="0" max="1" value="0">
+		    </td>
+		</tr>
+		<tr>
+		    <td>Festa Aniversário (10 crianças + 2 adultos)</td>
+		    <td>220.00€</td>
+		    <td>
+		    <input type="number" name="qtd_festa" min="0" max="1" value="0">
+		    </td>
+		</tr>
+	</table>
+	
+	<button type="submit" class="btn_avancar">Avançar para Pagamento</button>
+
 
 </body>
 

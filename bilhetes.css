@@ -1,0 +1,102 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial';
+    line-height: 1.5;
+    color: Black;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalhos */
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.2em;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #2980b9;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #16a085;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Listas */
+ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Tabela de preços */
+table {
+    width: 80%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Texto em negrito */
+b {
+    color: #e74c3c;
+}
+
+/* Rodapé implícito */
+body > p:last-of-type {
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    color: #7f8c8d;
+}
+
+.btn_avancar {
+    background-color: #16a085; /* Verde-água para combinar com h3 */
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
