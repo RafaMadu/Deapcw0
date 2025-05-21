@@ -1,0 +1,47 @@
+<style>
+  body {
+    background-color: #f2f2f2;  
+}
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 5px;
+  }
+
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  #mbway-div, #cartao-div {
+    margin-top: 15px;
+    border: 1px solid #cccccc;
+  }
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: deepskyblue;
+  }
+
+  .mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+  }
+
+</style>
