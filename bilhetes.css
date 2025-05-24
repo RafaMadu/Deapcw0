@@ -1,11 +1,11 @@
 /* Estilos gerais */
 body {
-    font-family: 'Arial';
-    line-height: 1.5;
-    color: Black;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    font-family: 'Arial'; /* Tipo de letra */
+    line-height: 1.5; /*Espaçamento entre linhas */
+    color: Black; /* Cor */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteudo da pagina */
+    padding: 20px; /* Cria um espaço interno de 20px em todos os lados do conteúdo principal */
 }
 
 /* Cabeçalhos */
@@ -67,20 +67,11 @@ th {
     font-weight: bold;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-tr:hover {
-    background-color: #e3f2fd;
-}
-
 /* Texto em negrito */
 b {
     color: #e74c3c;
 }
 
-/* Rodapé implícito */
 body > p:last-of-type {
     font-style: italic;
     text-align: center;
@@ -89,9 +80,11 @@ body > p:last-of-type {
 }
 
 .btn_avancar {
-    background-color: #16a085; /* Verde-água para combinar com h3 */
+    background-color: #16a085;
     color: white;
     padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
