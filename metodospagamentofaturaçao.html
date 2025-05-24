@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang=”pt”>
+
 <head>
-<title>Informações Pessoais</title>
+	
+	<link rel="stylesheet" href="metodospagamentofaturaçao.css">
+	<title>Informações Pessoais</title>
+
 </head>
+
 <body>
-<h1> Informaçoes Pessoais</h1>
-<form>
-<label for="nome">Nome:</label><br>
-<input type="text" id="nome" name="nome"><p>
-<label for="sobrenome">Sobrenome:<label><br>
-<input type="text" id="sobrenome" name="sobrenome"><p>
-<label for="email">Email:</label><br>
-<input type="email" id="email" name="email"><p>
-<label for="telemovel">Telemovel:</label><br>
-<input type="tel" id="telemovel" name="telemovel" placeholder="xxx xxx xxx" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required><p>
-<input type="submit" value="submeter">
-</form>
-<p></p>
-<p>Deseja fatura?</p>
-<form>
-<input type="radio" id="sim" name="fatura" value="sim">
-<label for="sim"> Sim</labe><p>
-<input type="radio" id="nao" name="fatura" value="nao">
-<label for="nao">Nao</labe><p>
-</form>
-<p></p>
-<form>
-<label for="nome1">Nome:</label><br>
-<input type="text" id="nome1" name="nome1"><p>
-<label for="morada">Morada:</label><br>
-<input type="text" id="morada" name="morada"><p>
-<label for="nif">NIF:</label><br>
-<input type="tel" id="nif" name="nif" placeholder="xxxxxxxxx" pattern="[0-9]{9}" required><p>
-<label for="postal">Codigo Postal:</label><br>
-<input type="tel" id="postal" name="postal" placeholder="xxxx-xxx" pattern="[0-9]{4}-[0-9]{3}" required><p>
-<input type="submit" value="submeter">
 
+	<h1> Informações Pessoais</h1>
 
-
-
-
+	<form>
+		<label for="nome">Nome:</label><br>
+		<input type="text" id="nome" name="nome"><p>
+		
+		<label for="sobrenome">Sobrenome:<label><br>
+		<input type="text" id="sobrenome" name="sobrenome"><p>
+		
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="email"><p>
+		
+		<label for="telemovel">Telemovel:</label><br>
+		<input type="tel" id="telemovel" name="telemovel" placeholder="xxx xxx xxx" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required><p>
+		
+		<input type="submit" value="Submeter">
+	</form>
+	
+	<p><b>Deseja fatura?
+	
+	<form>
+		<input type="radio" id="sim" name="fatura" value="sim">
+		<label for="sim"> Sim</label><p>
+		
+		<input type="radio" id="nao" name="fatura" value="nao">
+		<label for="nao">Nao</label><p>
+		
+	</form>
+	
+	<form>
+		<label for="nome1">Nome:</label><br>
+		<input type="text" id="nome1" name="nome1"><p>
+		
+		<label for="morada">Morada:</label><br>
+		<input type="text" id="morada" name="morada"><p>
+		
+		<label for="email">Email:</label><br>
+		<input type="email" id="email" name="Email"><p>
+		
+		<label for="nif">NIF:</label><br>
+		<input type="tel" id="nif" name="nif" placeholder="xxxxxxxxx" pattern="[0-9]{9}" required><p>
+		
+		<label for="postal">Codigo Postal:</label><br>
+		<input type="tel" id="postal" name="postal" placeholder="xxxx-xxx" pattern="[0-9]{4}-[0-9]{3}" required><p>
+		
+		<input type="submit" value="Submeter">
+	</form>
 
 </body>
-
 
 </html>
