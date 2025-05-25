@@ -1,47 +1,56 @@
-<style>
-  body {
-    background-color: #f2f2f2;  
+body {
+    font-family: 'Arial';
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: WhiteSmoke;
+    color: Black;
 }
 
-  h1 {
-    font-size: 24px;
-  }
+h1 {
+    color: Navy;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
 
-  p {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
 
-  input[type="text"],
-  input[type="password"] {
-    padding: 5px;
-  }
+b {
+    display: block;
+    font-size: 1.1em;
+}
 
-  input[type="radio"] {
-    margin-right: 5px;
-  }
+div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
-  #mbway-div, #cartao-div {
-    margin-top: 15px;
-    border: 1px solid #cccccc;
-  }
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
 
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: lightblue;
+    background-color: SeaGreen;
+    color: white;
     border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 4px;
     cursor: pointer;
-  }
-
-  button:hover {
-    background-color: deepskyblue;
-  }
-
-  .mensagem {
-    margin-top: 20px;
-    font-weight: bold;
-    color: green;
-  }
-
-</style>
+    display: block;
+    margin: 30px auto;
+    width: 200px;
+    transition: background-color 0.3s;
+}
