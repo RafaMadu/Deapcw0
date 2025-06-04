@@ -16,7 +16,7 @@ $email = $_GET["email"];
 $telemovel = $_GET["telemovel"];
 $fatura = $_GET["fatura"];
 
-$nome1 = $S_GET["nome1"];
+$nome1 = $_GET["nome1"];
 $sobrenome1 = $_GET["sobrenome1"];
 $email_fatura = $_GET["email_fatura"];
 $nif = $_GET["nif"];
@@ -30,3 +30,13 @@ echo "<p>Deseja fatura: $fatura</p>";
 
    if($fatura == "sim") {
 	echo "<h2>Dados faturação:</h2>"
+	echo "<p>Nome para fatura: $nome1</p>";
+	echo "<p>Morada: $morada</p>";
+	echo "<p>Email da fatura: $email_fatura</p>";
+	echo "<p>NIF: $nif</p>";
+	echo "<p>Código Postal: $codigo_postal</p>";
+}
+?>
+
+</body>
+</html>
