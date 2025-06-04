@@ -20,4 +20,16 @@ function mostrarCampos() {
 }
 </script>
 
+function verificarCampos() {
+   var inputs = document.querySelectorAll("input[type='text']");
+   for (var i = 0; i < inputs.length; i++) {
+     if (inputs[i].offsetParent !== null && inputs[i].value === "") {
+       alert("Por favor, preencha todos os campos.");
+     return false;
+     }
+   }
+   return true;
+}
+
 window.onload = mostrarCampos;
+

@@ -2,6 +2,7 @@
 <html lang = "pt">
 
 <head>
+   <meta charset = "UTF-8">
    <link rel="stylesheet" href="pagamento.css">
    <script src = "pagamento.js"></script>
    <title>Finalizar Compra</title>
@@ -13,10 +14,10 @@
    
    <b>Escolha o metodo de pagamento:</p>
    
-   <input type = "radio" name = "pagamento" value = "mbway" checked> MBWAY</p>
-   <input type = "radio" name = "pagamento" value = "cartao"> Cartao bancario</p> 
+   <input type = "radio" name = "metodo" value = "mbway" checked onclick="mostrarCampos()"> MBWAY</p>
+   <input type = "radio" name = "metodo" value = "cartao" onclick="mostrarCampos()"> Cartao bancario</p> 
 
-<form action = "pagamento.php" method="get">
+<form action = "pagamento.php" method="get" onsubmit="return verificarCampos()">
 
 <!--Mbway-->
    <div id="mbway">   
@@ -25,7 +26,7 @@
    </div>
  
 <!--Cartao bancario-->
-   <div id = "cartao">
+   <div id= "cartao">
      <p>Nome do cartao:<br>
      <input type = "text" name = "nome">
      
