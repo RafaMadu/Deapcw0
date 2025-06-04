@@ -7,7 +7,7 @@
 
 <body>
 
-<h1>Pagamento</h1>
+<h1>Pagamento bem efetuado</h1>
 
 <?php
 $metodo = $_GET["metodo"];

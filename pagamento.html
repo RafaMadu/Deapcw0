@@ -3,10 +3,12 @@
 
 <head>
    <link rel="stylesheet" href="pagamento.css">
+   <script src = "pagamento.js"></script>
    <title>Finalizar Compra</title>
 </head> 
 
 <body>
+
    <h1>Pagamento</h1><p>
    
    <b>Escolha o metodo de pagamento:</p>
@@ -17,13 +19,13 @@
 <form action = "pagamento.php" method="get">
 
 <!--Mbway-->
-   <div>   
+   <div id="mbway">   
      <p>Numero de telemovel:<br>
      <input type = "text" name = "telemovel">
    </div>
  
 <!--Cartao bancario-->
-   <div>
+   <div id = "cartao">
      <p>Nome do cartao:<br>
      <input type = "text" name = "nome">
      
