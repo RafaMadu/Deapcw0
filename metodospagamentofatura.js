@@ -3,10 +3,6 @@
     const campos = document.getElementById("campos");
 
     checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        campos.style.display = "block";
-      } else {
-        campos.style.display = "none";  
-      }
+      formulario.style.display = checkbox.checked ? "block" : "none";
     });
-  </script>
+ </script>
