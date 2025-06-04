@@ -1,18 +1,23 @@
 <script>
 function mostrarCampos() {
-   var mbwayRadio = document.querySelector('input[value="mbway"]');
-   var cartaoRadio = document.querySelector('input[value="cartao"]');
-   var telemovelDiv = document.getElementById("mbway");
-   var cartaoDiv = document.getElementByUd("cartao");
+   var mbway = document.querySelector('input[value="mbway"]');
+   var cartao = document.querySelector('input[value="cartao"]');
+   var divMbway = document.getElementById("mbway");
+   var divCartao = document.getElementById("cartao");
+   var metodoInput = document.getElementById("metodoEscolhido");
 
-   if (mbwayRadio.checked) {
-     telemovelDiv.style.display = "block";
-     cartaoDiv.style.display = "none";
+   if (mbway.checked) {
+     divMbway.style.display = "block";
+     divCartao.style.display = "none";
+     metodoInput.value = "mbway";
    }
 
-   if (cartaoRadio.checked) {
-     telemovelDiv.style.display = "none";
-     cartaoDiv.style.display = "block";
+   else if (cartao.checked) {
+     divMbway.style.display = "none";
+     divCartao.style.display = "block";
+     metodoInput.value = "cartao";
    }
 }
 </script>
+
+window.onload = mostrarCampos;
