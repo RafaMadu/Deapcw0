@@ -1,15 +1,23 @@
-<!DOCTYPE html>
-<html lang = "pt">
-<head>
-   <meta charset = "UTF-8">
-   <title>Confirmação do pagamento</title>
-</head>
-
-<body>
-
-<h1>Dados do cliente:</h1>
 
 <?php
+
+
+$db = new SQLite3("metodospagamentofaturaçao.db");
+// criação da tabela metodos pagamento
+$db->exec("CREATE TABLE metodospagamentofaturaçao(id INTEGER PRIMARY KEY, nome  TEXT, sobrenome TEXT,email TEXT,telemovel INT,fatura TEXT,nome1 TEXT,sobrenome1 TEXT,email_fatura TEXT, nif INT,codigo_postal INT )"); //(1)
+$db->exec("INSERT INTO Viaturas(nome, telemovel) VALUES('Fiat', 21644)"); //(2)
+echo "<h3>Tabela de Viaturas </h3>";
+$sqlvar = "select * from Viaturas ;";
+$result = $db->query($sqlvar); //(3)
+echo “<table>\n<th> Id </th><th> Marca </th><th> Preço </th>\n”;
+while ($row = $result->fetchArray(SQLITE3_ASSOC)) //(4)
+{
+echo ‘<tr><td>’ . $row['id'] . '</td><td>' . $row['marca'] . '</td><td>' . $row['preco']
+. “</td></tr>\n”;
+}
+echo ‘</table>’;
+unset($db);
+
 $nome = $_GET["nome"];
 $sobrenome = $_GET["sobrenome"];
 $email = $_GET["email"];
@@ -21,22 +29,5 @@ $sobrenome1 = $_GET["sobrenome1"];
 $email_fatura = $_GET["email_fatura"];
 $nif = $_GET["nif"];
 $codigo_postal = $_GET["codigo_postal"];
-
-echo "<p>Nome: $nome</p>";
-echo "<p>Sobrenome: $sobrenome</p>";
-echo "<p>Email: $email</p>";
-echo "<p>Telemóvel: $telemovel</p>";
-echo "<p>Deseja fatura: $fatura</p>";
-
-   if($fatura == "sim") {
-	echo "<h2>Dados faturação:</h2>"
-	echo "<p>Nome para fatura: $nome1</p>";
-	echo "<p>Morada: $morada</p>";
-	echo "<p>Email da fatura: $email_fatura</p>";
-	echo "<p>NIF: $nif</p>";
-	echo "<p>Código Postal: $codigo_postal</p>";
-}
 ?>
 
-</body>
-</html>
