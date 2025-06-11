@@ -1,20 +1,22 @@
 <?php
-$credenciaisValidas = ['admin' => 'admin123', 'vendedor1' => 'venda2023', 'joao' => 'abc123'];
+$db = new SQLite3('test.db');
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'] ?? '';
-    $password = $_POST['pwd'] ?? '';
+// criação da tabela de credenciais
 
-    // Validar credenciais
-if ($username === $credenciaisValidas['username'] && 
-    $password === $credenciaisValidas['password']) {
-    
-    // Credenciais corretas - redirecionar para a área restrita
-    header('Location: areaRestritaVendedor.php');
-    exit();
-} else {
-    // Credenciais incorretas - voltar ao formulário com mensagem de erro
-    header('Location: menuVendedor.php?error=1');
-    exit();
+$db->exec("CREATE TABLE Cred(id INTEGER PRIMARY KEY, username TEXT, password TEXT)"); //(1)
+$db->exec("INSERT INTO exemplo(username, password) VALUES('admin', admin123)"); //(2)
+$db->exec("INSERT INTO Cred(username, password) VALUES('vendedor', vend123)"); //(2)
+
+echo "<h3> Credenciais </h3>";
+
+$sqlvar = "select * from Cred ;";
+$result = $db->query($sqlvar); //(3)
+echo “<table>\n<th> Id </th><th> Username </th><th> Password </th>\n”;
+while ($row = $result->fetchArray(SQLITE3_ASSOC)) //(4)
+{
+echo ‘<tr><td>’ . $row['id'] . '</td><td>' . $row['username'] . '</td><td>' . $row['password']
+. “</td></tr>\n”;
 }
+echo ‘</table>’;
+unset($db);
 ?>
