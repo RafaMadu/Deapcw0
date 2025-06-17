@@ -93,3 +93,16 @@ body > p:last-of-type {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+.btn-vendedor {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
