@@ -3,6 +3,7 @@
 
 $db = new SQLite3 ('pagamento.db');
 
+
 $db->exec("CREATE TABLE Pagamentos(id INTEGER PRIMARY KEY, metodo TEXT, telemovel INT, nome TEXT, numero INT, validade INT, cvv INT)");
 
 $metodo = $_GET["metodo"];
